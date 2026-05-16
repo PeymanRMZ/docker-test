@@ -1,12 +1,1 @@
-FROM node:20-alpine
-
-WORKDIR /app
-
-COPY package.json .
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
+FROM ghcr.io/mhsanaei/3x-ui:latest
